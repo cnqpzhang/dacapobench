@@ -147,7 +147,7 @@
         <property name="file-name" value="dependency-check.py"/>
 
         <!-- checking python modules -->
-        <exec executable="python" failonerror="yes">
+        <exec executable="python3" failonerror="yes">
             <arg value="-c"/>
             <arg value="import colorama${line.separator}import future${line.separator}import tabulate${line.separator}import requests${line.separator}import wheel"/>
         </exec>
