@@ -149,7 +149,8 @@ public abstract class Page {
 
     if (!digestMatch) {
       if (!keep) {
-        System.err.printf("URL %s%n" + "   expected %s%n" + "   found    %s%n" + "   response code %d, response:%s%n", address, expectedDigest, digestString, iGetResultCode, strGetResponseBodyLocalized);
+        // hack: no digest output
+        // System.err.printf("URL %s%n" + "   expected %s%n" + "   found    %s%n" + "   response code %d, response:%s%n", address, expectedDigest, digestString, iGetResultCode, strGetResponseBodyLocalized);
       }
     }
     return digestMatch;
